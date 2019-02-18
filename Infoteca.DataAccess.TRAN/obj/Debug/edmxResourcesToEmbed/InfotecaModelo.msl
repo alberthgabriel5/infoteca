@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InfotecaModeloStoreContainer" CdmEntityContainer="InfotecaEntities">
+    <EntitySetMapping Name="TInfoteca_Bitacora">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Bitacora">
+        <MappingFragment StoreEntitySet="TInfoteca_Bitacora">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TC_Operacion" ColumnName="TC_Operacion" />
+          <ScalarProperty Name="TC_Usuario" ColumnName="TC_Usuario" />
+          <ScalarProperty Name="TC_Host" ColumnName="TC_Host" />
+          <ScalarProperty Name="TD_Modificado" ColumnName="TD_Modificado" />
+          <ScalarProperty Name="TC_Tabla" ColumnName="TC_Tabla" />
+          <ScalarProperty Name="TN_IdObjeto" ColumnName="TN_IdObjeto" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Fuente">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Fuente">
+        <MappingFragment StoreEntitySet="TInfoteca_Fuente">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TN_Tipo_Fuente" ColumnName="TN_Tipo_Fuente" />
+          <ScalarProperty Name="TC_Nombre" ColumnName="TC_Nombre" />
+          <ScalarProperty Name="TC_Titulo" ColumnName="TC_Titulo" />
+          <ScalarProperty Name="TC_Sub_Titulo" ColumnName="TC_Sub_Titulo" />
+          <ScalarProperty Name="TF_Fecha_Creacion" ColumnName="TF_Fecha_Creacion" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Imagen">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Imagen">
+        <MappingFragment StoreEntitySet="TInfoteca_Imagen">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TC_Nombre" ColumnName="TC_Nombre" />
+          <ScalarProperty Name="TI_Imagen" ColumnName="TI_Imagen" />
+          <ScalarProperty Name="TF_Fecha_Creacion" ColumnName="TF_Fecha_Creacion" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Mensaje">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Mensaje">
+        <MappingFragment StoreEntitySet="TInfoteca_Mensaje">
+          <ScalarProperty Name="TN_ID" ColumnName="TN_ID" />
+          <ScalarProperty Name="TC_Formato" ColumnName="TC_Formato" />
+          <ScalarProperty Name="TC_Accion" ColumnName="TC_Accion" />
+          <ScalarProperty Name="TC_Tabla" ColumnName="TC_Tabla" />
+          <ScalarProperty Name="TC_Mensaje" ColumnName="TC_Mensaje" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Noticia">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Noticia">
+        <MappingFragment StoreEntitySet="TInfoteca_Noticia">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TF_Fecha_Evento" ColumnName="TF_Fecha_Evento" />
+          <ScalarProperty Name="TC_Descripcion" ColumnName="TC_Descripcion" />
+          <ScalarProperty Name="TC_Sub_Delito" ColumnName="TC_Sub_Delito" />
+          <ScalarProperty Name="TC_Palabras_Clave" ColumnName="TC_Palabras_Clave" />
+          <ScalarProperty Name="TF_Fecha_Creacion" ColumnName="TF_Fecha_Creacion" />
+          <ScalarProperty Name="TN_Id_Tipo_Delito" ColumnName="TN_Id_Tipo_Delito" />
+          <ScalarProperty Name="TN_Id_Fuente" ColumnName="TN_Id_Fuente" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Noticia_Imagen">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Noticia_Imagen">
+        <MappingFragment StoreEntitySet="TInfoteca_Noticia_Imagen">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TN_Id_Noticia" ColumnName="TN_Id_Noticia" />
+          <ScalarProperty Name="TN_Id_Imagen" ColumnName="TN_Id_Imagen" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Noticia_Juridica">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Noticia_Juridica">
+        <MappingFragment StoreEntitySet="TInfoteca_Noticia_Juridica">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TN_Noticia" ColumnName="TN_Noticia" />
+          <ScalarProperty Name="TN_Juridica" ColumnName="TN_Juridica" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Noticia_Persona">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Noticia_Persona">
+        <MappingFragment StoreEntitySet="TInfoteca_Noticia_Persona">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TN_Noticia" ColumnName="TN_Noticia" />
+          <ScalarProperty Name="TN_Persona" ColumnName="TN_Persona" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Noticia_Propiedad">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Noticia_Propiedad">
+        <MappingFragment StoreEntitySet="TInfoteca_Noticia_Propiedad">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TN_Noticia" ColumnName="TN_Noticia" />
+          <ScalarProperty Name="TN_Propiedad" ColumnName="TN_Propiedad" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Noticia_Vehiculo">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Noticia_Vehiculo">
+        <MappingFragment StoreEntitySet="TInfoteca_Noticia_Vehiculo">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TN_Noticia" ColumnName="TN_Noticia" />
+          <ScalarProperty Name="TN_Vehiculo" ColumnName="TN_Vehiculo" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Persona">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Persona">
+        <MappingFragment StoreEntitySet="TInfoteca_Persona">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TC_Nombre" ColumnName="TC_Nombre" />
+          <ScalarProperty Name="TC_Apellido" ColumnName="TC_Apellido" />
+          <ScalarProperty Name="TC_Alias" ColumnName="TC_Alias" />
+          <ScalarProperty Name="TC_TipoIdentificacion" ColumnName="TC_TipoIdentificacion" />
+          <ScalarProperty Name="TC_Identificacion" ColumnName="TC_Identificacion" />
+          <ScalarProperty Name="TF_Fecha_Creacion" ColumnName="TF_Fecha_Creacion" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Persona_Juridica">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Persona_Juridica">
+        <MappingFragment StoreEntitySet="TInfoteca_Persona_Juridica">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TC_Nombre" ColumnName="TC_Nombre" />
+          <ScalarProperty Name="TC_Nombre_Fantasia" ColumnName="TC_Nombre_Fantasia" />
+          <ScalarProperty Name="TC_Cedula" ColumnName="TC_Cedula" />
+          <ScalarProperty Name="TF_Fecha_Creacion" ColumnName="TF_Fecha_Creacion" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Propiedad">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Propiedad">
+        <MappingFragment StoreEntitySet="TInfoteca_Propiedad">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TC_TipoPropiedad" ColumnName="TC_TipoPropiedad" />
+          <ScalarProperty Name="TC_Ubicacion" ColumnName="TC_Ubicacion" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Tipo_Delito">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Tipo_Delito">
+        <MappingFragment StoreEntitySet="TInfoteca_Tipo_Delito">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TC_Nombre" ColumnName="TC_Nombre" />
+          <ScalarProperty Name="TF_Fecha_Creacion" ColumnName="TF_Fecha_Creacion" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Tipo_Fuente">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Tipo_Fuente">
+        <MappingFragment StoreEntitySet="TInfoteca_Tipo_Fuente">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TC_Nombre" ColumnName="TC_Nombre" />
+          <ScalarProperty Name="TF_Fecha_Creacion" ColumnName="TF_Fecha_Creacion" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Usuario">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Usuario">
+        <MappingFragment StoreEntitySet="TInfoteca_Usuario">
+          <ScalarProperty Name="TN_ID" ColumnName="TN_ID" />
+          <ScalarProperty Name="TC_Usuario" ColumnName="TC_Usuario" />
+          <ScalarProperty Name="TC_Idetificacion" ColumnName="TC_Idetificacion" />
+          <ScalarProperty Name="TC_Nombre" ColumnName="TC_Nombre" />
+          <ScalarProperty Name="TC_PriApellido" ColumnName="TC_PriApellido" />
+          <ScalarProperty Name="TC_SegApellido" ColumnName="TC_SegApellido" />
+          <ScalarProperty Name="TC_Tipo_Autentificacion" ColumnName="TC_Tipo_Autentificacion" />
+          <ScalarProperty Name="TC_Tipo_Usuario" ColumnName="TC_Tipo_Usuario" />
+          <ScalarProperty Name="TC_Email" ColumnName="TC_Email" />
+          <ScalarProperty Name="TN_Intentos" ColumnName="TN_Intentos" />
+          <ScalarProperty Name="TC_Usuario_Actualiza" ColumnName="TC_Usuario_Actualiza" />
+          <ScalarProperty Name="TF_FecActualiza" ColumnName="TF_FecActualiza" />
+          <ScalarProperty Name="TC_Observaciones" ColumnName="TC_Observaciones" />
+          <ScalarProperty Name="TC_Eliminado" ColumnName="TC_Eliminado" />
+          <ScalarProperty Name="TC_Tipo_Identificacion_ID" ColumnName="TC_Tipo_Identificacion_ID" />
+          <ScalarProperty Name="TC_Institucion_ID" ColumnName="TC_Institucion_ID" />
+          <ScalarProperty Name="TC_Oficina_ID" ColumnName="TC_Oficina_ID" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TInfoteca_Vehiculo">
+      <EntityTypeMapping TypeName="InfotecaModelo.TInfoteca_Vehiculo">
+        <MappingFragment StoreEntitySet="TInfoteca_Vehiculo">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TC_Placa" ColumnName="TC_Placa" />
+          <ScalarProperty Name="TC_Marca" ColumnName="TC_Marca" />
+          <ScalarProperty Name="TC_Modelo" ColumnName="TC_Modelo" />
+          <ScalarProperty Name="TC_Color" ColumnName="TC_Color" />
+          <ScalarProperty Name="TN_Id_Estilo" ColumnName="TN_Id_Estilo" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="InfotecaModelo.Store.splitstring" FunctionImportName="splitstring">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="InfotecaModelo.splitstring_Result">
+          <ScalarProperty Name="tag" ColumnName="tag" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PInfoteca_BuscarNoticiaPorFechas" FunctionName="InfotecaModelo.Store.PInfoteca_BuscarNoticiaPorFechas">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="InfotecaModelo.PInfoteca_BuscarNoticiaPorFechas_Result">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TF_Fecha_Evento" ColumnName="TF_Fecha_Evento" />
+          <ScalarProperty Name="TC_Descripcion" ColumnName="TC_Descripcion" />
+          <ScalarProperty Name="TC_Sub_Delito" ColumnName="TC_Sub_Delito" />
+          <ScalarProperty Name="TC_Palabras_Clave" ColumnName="TC_Palabras_Clave" />
+          <ScalarProperty Name="TF_Fecha_Creacion" ColumnName="TF_Fecha_Creacion" />
+          <ScalarProperty Name="TN_Id_Tipo_Delito" ColumnName="TN_Id_Tipo_Delito" />
+          <ScalarProperty Name="TN_Id_Fuente" ColumnName="TN_Id_Fuente" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PInfoteca_BuscarNoticiaPorPalabrasClave" FunctionName="InfotecaModelo.Store.PInfoteca_BuscarNoticiaPorPalabrasClave">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="InfotecaModelo.PInfoteca_BuscarNoticiaPorPalabrasClave_Result">
+          <ScalarProperty Name="TN_Id" ColumnName="TN_Id" />
+          <ScalarProperty Name="TF_Fecha_Evento" ColumnName="TF_Fecha_Evento" />
+          <ScalarProperty Name="TC_Descripcion" ColumnName="TC_Descripcion" />
+          <ScalarProperty Name="TC_Sub_Delito" ColumnName="TC_Sub_Delito" />
+          <ScalarProperty Name="TC_Palabras_Clave" ColumnName="TC_Palabras_Clave" />
+          <ScalarProperty Name="TF_Fecha_Creacion" ColumnName="TF_Fecha_Creacion" />
+          <ScalarProperty Name="TN_Id_Tipo_Delito" ColumnName="TN_Id_Tipo_Delito" />
+          <ScalarProperty Name="TN_Id_Fuente" ColumnName="TN_Id_Fuente" />
+          <ScalarProperty Name="TB_Activo" ColumnName="TB_Activo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

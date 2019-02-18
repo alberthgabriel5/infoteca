@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InfotecaModelo" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <ComplexType Name="splitstring_Result">
+    <Property Name="tag" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </ComplexType>
+  <EntityType Name="TInfoteca_Bitacora">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TC_Operacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Usuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Host" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TD_Modificado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TC_Tabla" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TN_IdObjeto" Type="Int32" Nullable="false" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Fuente">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TN_Tipo_Fuente" Type="Int32" Nullable="false" />
+    <Property Name="TC_Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TC_Titulo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Sub_Titulo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TF_Fecha_Creacion" Type="DateTime" Precision="3" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Tipo_Fuente" Relationship="Self.FK_TInfoteca_Fuente_TInfoteca_Tipo_Fuente" FromRole="TInfoteca_Fuente" ToRole="TInfoteca_Tipo_Fuente" />
+    <NavigationProperty Name="TInfoteca_Noticia" Relationship="Self.FK_TInfoteca_Noticia_TInfoteca_Tipo_Fuente" FromRole="TInfoteca_Fuente" ToRole="TInfoteca_Noticia" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Imagen">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TC_Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TI_Imagen" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="TF_Fecha_Creacion" Type="DateTime" Precision="3" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Noticia_Imagen" Relationship="Self.FK_TInfoteca_Noticia_Imagen_TInfoteca_Imagen" FromRole="TInfoteca_Imagen" ToRole="TInfoteca_Noticia_Imagen" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Mensaje">
+    <Key>
+      <PropertyRef Name="TN_ID" />
+    </Key>
+    <Property Name="TN_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TC_Formato" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Accion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Tabla" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Mensaje" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Noticia">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TF_Fecha_Evento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TC_Descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TC_Sub_Delito" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Palabras_Clave" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TF_Fecha_Creacion" Type="DateTime" Precision="3" />
+    <Property Name="TN_Id_Tipo_Delito" Type="Int32" Nullable="false" />
+    <Property Name="TN_Id_Fuente" Type="Int32" Nullable="false" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Fuente" Relationship="Self.FK_TInfoteca_Noticia_TInfoteca_Tipo_Fuente" FromRole="TInfoteca_Noticia" ToRole="TInfoteca_Fuente" />
+    <NavigationProperty Name="TInfoteca_Noticia_Imagen" Relationship="Self.FK_TInfoteca_Noticia_Imagen_TInfoteca_Noticia" FromRole="TInfoteca_Noticia" ToRole="TInfoteca_Noticia_Imagen" />
+    <NavigationProperty Name="TInfoteca_Noticia_Juridica" Relationship="Self.FK_TInfoteca_Noticia_Juridica_TInfoteca_Noticia" FromRole="TInfoteca_Noticia" ToRole="TInfoteca_Noticia_Juridica" />
+    <NavigationProperty Name="TInfoteca_Noticia_Persona" Relationship="Self.FK_TInfoteca_Noticia_Persona_TInfoteca_Noticia" FromRole="TInfoteca_Noticia" ToRole="TInfoteca_Noticia_Persona" />
+    <NavigationProperty Name="TInfoteca_Noticia_Propiedad" Relationship="Self.FK_TInfoteca_Noticia_Propiedad_TInfoteca_Noticia" FromRole="TInfoteca_Noticia" ToRole="TInfoteca_Noticia_Propiedad" />
+    <NavigationProperty Name="TInfoteca_Tipo_Delito" Relationship="Self.FK_TInfoteca_Noticia_TInfoteca_Tipo_Delito" FromRole="TInfoteca_Noticia" ToRole="TInfoteca_Tipo_Delito" />
+    <NavigationProperty Name="TInfoteca_Noticia_Vehiculo" Relationship="Self.FK_TInfoteca_Noticia_Vehiculo_TInfoteca_Noticia" FromRole="TInfoteca_Noticia" ToRole="TInfoteca_Noticia_Vehiculo" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Noticia_Imagen">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TN_Id_Noticia" Type="Int32" Nullable="false" />
+    <Property Name="TN_Id_Imagen" Type="Int32" Nullable="false" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Imagen" Relationship="Self.FK_TInfoteca_Noticia_Imagen_TInfoteca_Imagen" FromRole="TInfoteca_Noticia_Imagen" ToRole="TInfoteca_Imagen" />
+    <NavigationProperty Name="TInfoteca_Noticia" Relationship="Self.FK_TInfoteca_Noticia_Imagen_TInfoteca_Noticia" FromRole="TInfoteca_Noticia_Imagen" ToRole="TInfoteca_Noticia" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Noticia_Juridica">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TN_Noticia" Type="Int32" Nullable="false" />
+    <Property Name="TN_Juridica" Type="Int32" Nullable="false" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Noticia" Relationship="Self.FK_TInfoteca_Noticia_Juridica_TInfoteca_Noticia" FromRole="TInfoteca_Noticia_Juridica" ToRole="TInfoteca_Noticia" />
+    <NavigationProperty Name="TInfoteca_Persona_Juridica" Relationship="Self.FK_TInfoteca_Noticia_Juridica_TInfoteca_Persona_Juridica" FromRole="TInfoteca_Noticia_Juridica" ToRole="TInfoteca_Persona_Juridica" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Noticia_Persona">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TN_Noticia" Type="Int32" Nullable="false" />
+    <Property Name="TN_Persona" Type="Int32" Nullable="false" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Noticia" Relationship="Self.FK_TInfoteca_Noticia_Persona_TInfoteca_Noticia" FromRole="TInfoteca_Noticia_Persona" ToRole="TInfoteca_Noticia" />
+    <NavigationProperty Name="TInfoteca_Persona" Relationship="Self.FK_TInfoteca_Noticia_Persona_TInfoteca_Persona" FromRole="TInfoteca_Noticia_Persona" ToRole="TInfoteca_Persona" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Noticia_Propiedad">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TN_Noticia" Type="Int32" Nullable="false" />
+    <Property Name="TN_Propiedad" Type="Int32" Nullable="false" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Noticia" Relationship="Self.FK_TInfoteca_Noticia_Propiedad_TInfoteca_Noticia" FromRole="TInfoteca_Noticia_Propiedad" ToRole="TInfoteca_Noticia" />
+    <NavigationProperty Name="TInfoteca_Propiedad" Relationship="Self.FK_TInfoteca_Noticia_Propiedad_TInfoteca_Propiedad" FromRole="TInfoteca_Noticia_Propiedad" ToRole="TInfoteca_Propiedad" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Noticia_Vehiculo">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TN_Noticia" Type="Int32" Nullable="false" />
+    <Property Name="TN_Vehiculo" Type="Int32" Nullable="false" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Noticia" Relationship="Self.FK_TInfoteca_Noticia_Vehiculo_TInfoteca_Noticia" FromRole="TInfoteca_Noticia_Vehiculo" ToRole="TInfoteca_Noticia" />
+    <NavigationProperty Name="TInfoteca_Vehiculo" Relationship="Self.FK_TInfoteca_Noticia_Vehiculo_TInfoteca_Vehiculo" FromRole="TInfoteca_Noticia_Vehiculo" ToRole="TInfoteca_Vehiculo" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Persona">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TC_Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Alias" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_TipoIdentificacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Identificacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TF_Fecha_Creacion" Type="DateTime" Precision="3" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Noticia_Persona" Relationship="Self.FK_TInfoteca_Noticia_Persona_TInfoteca_Persona" FromRole="TInfoteca_Persona" ToRole="TInfoteca_Noticia_Persona" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Persona_Juridica">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TC_Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Nombre_Fantasia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Cedula" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TF_Fecha_Creacion" Type="DateTime" Precision="3" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Noticia_Juridica" Relationship="Self.FK_TInfoteca_Noticia_Juridica_TInfoteca_Persona_Juridica" FromRole="TInfoteca_Persona_Juridica" ToRole="TInfoteca_Noticia_Juridica" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Propiedad">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TC_TipoPropiedad" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Ubicacion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Noticia_Propiedad" Relationship="Self.FK_TInfoteca_Noticia_Propiedad_TInfoteca_Propiedad" FromRole="TInfoteca_Propiedad" ToRole="TInfoteca_Noticia_Propiedad" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Tipo_Delito">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TC_Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TF_Fecha_Creacion" Type="DateTime" Precision="3" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Noticia" Relationship="Self.FK_TInfoteca_Noticia_TInfoteca_Tipo_Delito" FromRole="TInfoteca_Tipo_Delito" ToRole="TInfoteca_Noticia" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Tipo_Fuente">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TC_Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TF_Fecha_Creacion" Type="DateTime" Precision="3" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Fuente" Relationship="Self.FK_TInfoteca_Fuente_TInfoteca_Tipo_Fuente" FromRole="TInfoteca_Tipo_Fuente" ToRole="TInfoteca_Fuente" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Usuario">
+    <Key>
+      <PropertyRef Name="TN_ID" />
+    </Key>
+    <Property Name="TN_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TC_Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Idetificacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_PriApellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_SegApellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Tipo_Autentificacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Tipo_Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TN_Intentos" Type="Int32" />
+    <Property Name="TC_Usuario_Actualiza" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TF_FecActualiza" Type="DateTime" Precision="3" />
+    <Property Name="TC_Observaciones" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Eliminado" Type="Boolean" Nullable="false" />
+    <Property Name="TC_Tipo_Identificacion_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Institucion_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Oficina_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TInfoteca_Vehiculo">
+    <Key>
+      <PropertyRef Name="TN_Id" />
+    </Key>
+    <Property Name="TN_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TC_Placa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Marca" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Modelo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TC_Color" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TN_Id_Estilo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TB_Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="TInfoteca_Noticia_Vehiculo" Relationship="Self.FK_TInfoteca_Noticia_Vehiculo_TInfoteca_Vehiculo" FromRole="TInfoteca_Vehiculo" ToRole="TInfoteca_Noticia_Vehiculo" />
+  </EntityType>
+  <Association Name="FK_TInfoteca_Fuente_TInfoteca_Tipo_Fuente">
+    <End Role="TInfoteca_Tipo_Fuente" Type="Self.TInfoteca_Tipo_Fuente" Multiplicity="1" />
+    <End Role="TInfoteca_Fuente" Type="Self.TInfoteca_Fuente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Tipo_Fuente">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Fuente">
+        <PropertyRef Name="TN_Tipo_Fuente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TInfoteca_Noticia_TInfoteca_Tipo_Fuente">
+    <End Role="TInfoteca_Fuente" Type="Self.TInfoteca_Fuente" Multiplicity="1" />
+    <End Role="TInfoteca_Noticia" Type="Self.TInfoteca_Noticia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Fuente">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Noticia">
+        <PropertyRef Name="TN_Id_Fuente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TInfoteca_Noticia_Imagen_TInfoteca_Imagen">
+    <End Role="TInfoteca_Imagen" Type="Self.TInfoteca_Imagen" Multiplicity="1" />
+    <End Role="TInfoteca_Noticia_Imagen" Type="Self.TInfoteca_Noticia_Imagen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Imagen">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Noticia_Imagen">
+        <PropertyRef Name="TN_Id_Imagen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TInfoteca_Noticia_Imagen_TInfoteca_Noticia">
+    <End Role="TInfoteca_Noticia" Type="Self.TInfoteca_Noticia" Multiplicity="1" />
+    <End Role="TInfoteca_Noticia_Imagen" Type="Self.TInfoteca_Noticia_Imagen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Noticia">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Noticia_Imagen">
+        <PropertyRef Name="TN_Id_Noticia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TInfoteca_Noticia_Juridica_TInfoteca_Noticia">
+    <End Role="TInfoteca_Noticia" Type="Self.TInfoteca_Noticia" Multiplicity="1" />
+    <End Role="TInfoteca_Noticia_Juridica" Type="Self.TInfoteca_Noticia_Juridica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Noticia">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Noticia_Juridica">
+        <PropertyRef Name="TN_Noticia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TInfoteca_Noticia_Persona_TInfoteca_Noticia">
+    <End Role="TInfoteca_Noticia" Type="Self.TInfoteca_Noticia" Multiplicity="1" />
+    <End Role="TInfoteca_Noticia_Persona" Type="Self.TInfoteca_Noticia_Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Noticia">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Noticia_Persona">
+        <PropertyRef Name="TN_Noticia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TInfoteca_Noticia_Propiedad_TInfoteca_Noticia">
+    <End Role="TInfoteca_Noticia" Type="Self.TInfoteca_Noticia" Multiplicity="1" />
+    <End Role="TInfoteca_Noticia_Propiedad" Type="Self.TInfoteca_Noticia_Propiedad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Noticia">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Noticia_Propiedad">
+        <PropertyRef Name="TN_Noticia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TInfoteca_Noticia_TInfoteca_Tipo_Delito">
+    <End Role="TInfoteca_Tipo_Delito" Type="Self.TInfoteca_Tipo_Delito" Multiplicity="1" />
+    <End Role="TInfoteca_Noticia" Type="Self.TInfoteca_Noticia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Tipo_Delito">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Noticia">
+        <PropertyRef Name="TN_Id_Tipo_Delito" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TInfoteca_Noticia_Vehiculo_TInfoteca_Noticia">
+    <End Role="TInfoteca_Noticia" Type="Self.TInfoteca_Noticia" Multiplicity="1" />
+    <End Role="TInfoteca_Noticia_Vehiculo" Type="Self.TInfoteca_Noticia_Vehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Noticia">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Noticia_Vehiculo">
+        <PropertyRef Name="TN_Noticia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TInfoteca_Noticia_Juridica_TInfoteca_Persona_Juridica">
+    <End Role="TInfoteca_Persona_Juridica" Type="Self.TInfoteca_Persona_Juridica" Multiplicity="1" />
+    <End Role="TInfoteca_Noticia_Juridica" Type="Self.TInfoteca_Noticia_Juridica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Persona_Juridica">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Noticia_Juridica">
+        <PropertyRef Name="TN_Juridica" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TInfoteca_Noticia_Persona_TInfoteca_Persona">
+    <End Role="TInfoteca_Persona" Type="Self.TInfoteca_Persona" Multiplicity="1" />
+    <End Role="TInfoteca_Noticia_Persona" Type="Self.TInfoteca_Noticia_Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Persona">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Noticia_Persona">
+        <PropertyRef Name="TN_Persona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TInfoteca_Noticia_Propiedad_TInfoteca_Propiedad">
+    <End Role="TInfoteca_Propiedad" Type="Self.TInfoteca_Propiedad" Multiplicity="1" />
+    <End Role="TInfoteca_Noticia_Propiedad" Type="Self.TInfoteca_Noticia_Propiedad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Propiedad">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Noticia_Propiedad">
+        <PropertyRef Name="TN_Propiedad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TInfoteca_Noticia_Vehiculo_TInfoteca_Vehiculo">
+    <End Role="TInfoteca_Vehiculo" Type="Self.TInfoteca_Vehiculo" Multiplicity="1" />
+    <End Role="TInfoteca_Noticia_Vehiculo" Type="Self.TInfoteca_Noticia_Vehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TInfoteca_Vehiculo">
+        <PropertyRef Name="TN_Id" />
+      </Principal>
+      <Dependent Role="TInfoteca_Noticia_Vehiculo">
+        <PropertyRef Name="TN_Vehiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="InfotecaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TInfoteca_Bitacora" EntityType="Self.TInfoteca_Bitacora" />
+    <EntitySet Name="TInfoteca_Fuente" EntityType="Self.TInfoteca_Fuente" />
+    <EntitySet Name="TInfoteca_Imagen" EntityType="Self.TInfoteca_Imagen" />
+    <EntitySet Name="TInfoteca_Mensaje" EntityType="Self.TInfoteca_Mensaje" />
+    <EntitySet Name="TInfoteca_Noticia" EntityType="Self.TInfoteca_Noticia" />
+    <EntitySet Name="TInfoteca_Noticia_Imagen" EntityType="Self.TInfoteca_Noticia_Imagen" />
+    <EntitySet Name="TInfoteca_Noticia_Juridica" EntityType="Self.TInfoteca_Noticia_Juridica" />
+    <EntitySet Name="TInfoteca_Noticia_Persona" EntityType="Self.TInfoteca_Noticia_Persona" />
+    <EntitySet Name="TInfoteca_Noticia_Propiedad" EntityType="Self.TInfoteca_Noticia_Propiedad" />
+    <EntitySet Name="TInfoteca_Noticia_Vehiculo" EntityType="Self.TInfoteca_Noticia_Vehiculo" />
+    <EntitySet Name="TInfoteca_Persona" EntityType="Self.TInfoteca_Persona" />
+    <EntitySet Name="TInfoteca_Persona_Juridica" EntityType="Self.TInfoteca_Persona_Juridica" />
+    <EntitySet Name="TInfoteca_Propiedad" EntityType="Self.TInfoteca_Propiedad" />
+    <EntitySet Name="TInfoteca_Tipo_Delito" EntityType="Self.TInfoteca_Tipo_Delito" />
+    <EntitySet Name="TInfoteca_Tipo_Fuente" EntityType="Self.TInfoteca_Tipo_Fuente" />
+    <EntitySet Name="TInfoteca_Usuario" EntityType="Self.TInfoteca_Usuario" />
+    <EntitySet Name="TInfoteca_Vehiculo" EntityType="Self.TInfoteca_Vehiculo" />
+    <AssociationSet Name="FK_TInfoteca_Fuente_TInfoteca_Tipo_Fuente" Association="Self.FK_TInfoteca_Fuente_TInfoteca_Tipo_Fuente">
+      <End Role="TInfoteca_Tipo_Fuente" EntitySet="TInfoteca_Tipo_Fuente" />
+      <End Role="TInfoteca_Fuente" EntitySet="TInfoteca_Fuente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TInfoteca_Noticia_TInfoteca_Tipo_Fuente" Association="Self.FK_TInfoteca_Noticia_TInfoteca_Tipo_Fuente">
+      <End Role="TInfoteca_Fuente" EntitySet="TInfoteca_Fuente" />
+      <End Role="TInfoteca_Noticia" EntitySet="TInfoteca_Noticia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TInfoteca_Noticia_Imagen_TInfoteca_Imagen" Association="Self.FK_TInfoteca_Noticia_Imagen_TInfoteca_Imagen">
+      <End Role="TInfoteca_Imagen" EntitySet="TInfoteca_Imagen" />
+      <End Role="TInfoteca_Noticia_Imagen" EntitySet="TInfoteca_Noticia_Imagen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TInfoteca_Noticia_Imagen_TInfoteca_Noticia" Association="Self.FK_TInfoteca_Noticia_Imagen_TInfoteca_Noticia">
+      <End Role="TInfoteca_Noticia" EntitySet="TInfoteca_Noticia" />
+      <End Role="TInfoteca_Noticia_Imagen" EntitySet="TInfoteca_Noticia_Imagen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TInfoteca_Noticia_Juridica_TInfoteca_Noticia" Association="Self.FK_TInfoteca_Noticia_Juridica_TInfoteca_Noticia">
+      <End Role="TInfoteca_Noticia" EntitySet="TInfoteca_Noticia" />
+      <End Role="TInfoteca_Noticia_Juridica" EntitySet="TInfoteca_Noticia_Juridica" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TInfoteca_Noticia_Persona_TInfoteca_Noticia" Association="Self.FK_TInfoteca_Noticia_Persona_TInfoteca_Noticia">
+      <End Role="TInfoteca_Noticia" EntitySet="TInfoteca_Noticia" />
+      <End Role="TInfoteca_Noticia_Persona" EntitySet="TInfoteca_Noticia_Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TInfoteca_Noticia_Propiedad_TInfoteca_Noticia" Association="Self.FK_TInfoteca_Noticia_Propiedad_TInfoteca_Noticia">
+      <End Role="TInfoteca_Noticia" EntitySet="TInfoteca_Noticia" />
+      <End Role="TInfoteca_Noticia_Propiedad" EntitySet="TInfoteca_Noticia_Propiedad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TInfoteca_Noticia_TInfoteca_Tipo_Delito" Association="Self.FK_TInfoteca_Noticia_TInfoteca_Tipo_Delito">
+      <End Role="TInfoteca_Tipo_Delito" EntitySet="TInfoteca_Tipo_Delito" />
+      <End Role="TInfoteca_Noticia" EntitySet="TInfoteca_Noticia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TInfoteca_Noticia_Vehiculo_TInfoteca_Noticia" Association="Self.FK_TInfoteca_Noticia_Vehiculo_TInfoteca_Noticia">
+      <End Role="TInfoteca_Noticia" EntitySet="TInfoteca_Noticia" />
+      <End Role="TInfoteca_Noticia_Vehiculo" EntitySet="TInfoteca_Noticia_Vehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TInfoteca_Noticia_Juridica_TInfoteca_Persona_Juridica" Association="Self.FK_TInfoteca_Noticia_Juridica_TInfoteca_Persona_Juridica">
+      <End Role="TInfoteca_Persona_Juridica" EntitySet="TInfoteca_Persona_Juridica" />
+      <End Role="TInfoteca_Noticia_Juridica" EntitySet="TInfoteca_Noticia_Juridica" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TInfoteca_Noticia_Persona_TInfoteca_Persona" Association="Self.FK_TInfoteca_Noticia_Persona_TInfoteca_Persona">
+      <End Role="TInfoteca_Persona" EntitySet="TInfoteca_Persona" />
+      <End Role="TInfoteca_Noticia_Persona" EntitySet="TInfoteca_Noticia_Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TInfoteca_Noticia_Propiedad_TInfoteca_Propiedad" Association="Self.FK_TInfoteca_Noticia_Propiedad_TInfoteca_Propiedad">
+      <End Role="TInfoteca_Propiedad" EntitySet="TInfoteca_Propiedad" />
+      <End Role="TInfoteca_Noticia_Propiedad" EntitySet="TInfoteca_Noticia_Propiedad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TInfoteca_Noticia_Vehiculo_TInfoteca_Vehiculo" Association="Self.FK_TInfoteca_Noticia_Vehiculo_TInfoteca_Vehiculo">
+      <End Role="TInfoteca_Vehiculo" EntitySet="TInfoteca_Vehiculo" />
+      <End Role="TInfoteca_Noticia_Vehiculo" EntitySet="TInfoteca_Noticia_Vehiculo" />
+    </AssociationSet>
+    <FunctionImport Name="splitstring" IsComposable="true" ReturnType="Collection(InfotecaModelo.splitstring_Result)">
+      <Parameter Name="stringToSplit" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PInfoteca_BuscarNoticiaPorFechas" ReturnType="Collection(InfotecaModelo.PInfoteca_BuscarNoticiaPorFechas_Result)">
+      <Parameter Name="fecha_inicio" Mode="In" Type="DateTime" />
+      <Parameter Name="fecha_fin" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="PInfoteca_BuscarNoticiaPorPalabrasClave" ReturnType="Collection(InfotecaModelo.PInfoteca_BuscarNoticiaPorPalabrasClave_Result)">
+      <Parameter Name="Tag" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="PInfoteca_BuscarNoticiaPorFechas_Result">
+    <Property Type="Int32" Name="TN_Id" Nullable="false" />
+    <Property Type="DateTime" Name="TF_Fecha_Evento" Nullable="false" Precision="23" />
+    <Property Type="String" Name="TC_Descripcion" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="TC_Sub_Delito" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="TC_Palabras_Clave" Nullable="false" />
+    <Property Type="DateTime" Name="TF_Fecha_Creacion" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="TN_Id_Tipo_Delito" Nullable="false" />
+    <Property Type="Int32" Name="TN_Id_Fuente" Nullable="false" />
+    <Property Type="Boolean" Name="TB_Activo" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="PInfoteca_BuscarNoticiaPorPalabrasClave_Result">
+    <Property Type="Int32" Name="TN_Id" Nullable="false" />
+    <Property Type="DateTime" Name="TF_Fecha_Evento" Nullable="false" Precision="23" />
+    <Property Type="String" Name="TC_Descripcion" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="TC_Sub_Delito" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="TC_Palabras_Clave" Nullable="false" />
+    <Property Type="DateTime" Name="TF_Fecha_Creacion" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="TN_Id_Tipo_Delito" Nullable="false" />
+    <Property Type="Int32" Name="TN_Id_Fuente" Nullable="false" />
+    <Property Type="Boolean" Name="TB_Activo" Nullable="false" />
+  </ComplexType>
+</Schema>

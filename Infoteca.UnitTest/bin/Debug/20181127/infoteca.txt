@@ -1,0 +1,7 @@
+﻿2018-11-27 00:01:38,679 ERROR [11] Infoteca.Utilitarios.Utiles.MensajeError.LogMensajeError - An error occurred while updating the entries. See the inner exception for details.
+2018-11-27 00:13:35,032 ERROR [11] Infoteca.Utilitarios.Utiles.MensajeError.LogMensajeError - An error occurred while updating the entries. See the inner exception for details.
+2018-11-27 02:10:58,287 ERROR [11] Infoteca.Utilitarios.Utiles.MensajeError.LogMensajeError - Referencia a objeto no establecida como instancia de un objeto.
+2018-11-27 02:13:27,163 ERROR [11] Infoteca.Utilitarios.Utiles.MensajeError.LogMensajeError - Referencia a objeto no establecida como instancia de un objeto.
+2018-11-27 09:26:40,971 ERROR [11] Infoteca.Utilitarios.Utiles.MensajeError.LogMensajeError - Referencia a objeto no establecida como instancia de un objeto.
+2018-11-27 09:27:28,757 ERROR [11] Infoteca.Utilitarios.Utiles.MensajeError.LogMensajeError - Referencia a objeto no establecida como instancia de un objeto.
+2018-11-27 15:48:14,963 ERROR [11] Infoteca.Utilitarios.Utiles.MensajeError.LogMensajeError - Referencia a objeto no establecida como instancia de un objeto.

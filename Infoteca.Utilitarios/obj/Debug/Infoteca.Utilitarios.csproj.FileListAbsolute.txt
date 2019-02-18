@@ -1,0 +1,8 @@
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.Utilitarios\bin\Debug\Infoteca.Utilitarios.dll
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.Utilitarios\bin\Debug\Infoteca.Utilitarios.pdb
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.Utilitarios\bin\Debug\log4net.dll
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.Utilitarios\obj\Debug\Infoteca.Utilitarios.csprojAssemblyReference.cache
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.Utilitarios\obj\Debug\Infoteca.Utilitarios.csproj.CoreCompileInputs.cache
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.Utilitarios\obj\Debug\Infoteca.Utilitarios.csproj.CopyComplete
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.Utilitarios\obj\Debug\Infoteca.Utilitarios.dll
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.Utilitarios\obj\Debug\Infoteca.Utilitarios.pdb

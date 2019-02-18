@@ -1,0 +1,131 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5.2": {
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win": {
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win-x64": {
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win-x86": {
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "log4net/2.0.8": {
+      "sha512": "dwvu/YELc2nF5gjAnJMXJToYXVdK8Ma0BfLTEugMTM6l8kFysL9Np5LnwhUV6EKTkbRmVTa0/X1/8oSICcoHHw==",
+      "type": "package",
+      "path": "log4net/2.0.8",
+      "files": [
+        ".signature.p7s",
+        "lib/net20-full/log4net.dll",
+        "lib/net20-full/log4net.xml",
+        "lib/net35-client/log4net.dll",
+        "lib/net35-client/log4net.xml",
+        "lib/net35-full/log4net.dll",
+        "lib/net35-full/log4net.xml",
+        "lib/net40-client/log4net.dll",
+        "lib/net40-client/log4net.xml",
+        "lib/net40-full/log4net.dll",
+        "lib/net40-full/log4net.xml",
+        "lib/net45-full/log4net.dll",
+        "lib/net45-full/log4net.xml",
+        "lib/netstandard1.3/log4net.dll",
+        "log4net.2.0.8.nupkg.sha512",
+        "log4net.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5.2": [
+      "log4net >= 2.0.8"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\alber\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Respaldo\\UCR\\Analisis y Diseño de Sistemas\\infoteca\\Infoteca\\Infoteca.Utilitarios\\Infoteca.Utilitarios.csproj",
+      "projectName": "Infoteca.Utilitarios",
+      "projectPath": "C:\\Respaldo\\UCR\\Analisis y Diseño de Sistemas\\infoteca\\Infoteca\\Infoteca.Utilitarios\\Infoteca.Utilitarios.csproj",
+      "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
+      "outputPath": "C:\\Respaldo\\UCR\\Analisis y Diseño de Sistemas\\infoteca\\Infoteca\\Infoteca.Utilitarios\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\alber\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net452"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net452": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net452": {
+        "dependencies": {
+          "log4net": {
+            "target": "Package",
+            "version": "[2.0.8, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

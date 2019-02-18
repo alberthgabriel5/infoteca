@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d0a9eab3975c4eb690afa64272eaa4f8" Name="Diagram1">
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Bitacora" Width="1.5" PointX="10.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Fuente" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Imagen" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Mensaje" Width="1.5" PointX="0.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Noticia" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Noticia_Imagen" Width="1.5" PointX="7.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Noticia_Juridica" Width="1.5" PointX="7.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Noticia_Persona" Width="1.5" PointX="7.5" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Noticia_Propiedad" Width="1.5" PointX="10.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Noticia_Vehiculo" Width="1.5" PointX="10.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Persona" Width="1.5" PointX="5.25" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Persona_Juridica" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Propiedad" Width="1.5" PointX="8.25" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Tipo_Delito" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Tipo_Fuente" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Usuario" Width="1.5" PointX="10.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="InfotecaModelo.TInfoteca_Vehiculo" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Fuente_TInfoteca_Tipo_Fuente" ManuallyRouted="false" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Noticia_TInfoteca_Tipo_Fuente" ManuallyRouted="false" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Noticia_Imagen_TInfoteca_Imagen" ManuallyRouted="false" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Noticia_Imagen_TInfoteca_Noticia" ManuallyRouted="false" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Noticia_Juridica_TInfoteca_Noticia" ManuallyRouted="false" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Noticia_Persona_TInfoteca_Noticia" ManuallyRouted="false" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Noticia_Propiedad_TInfoteca_Noticia" ManuallyRouted="false" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Noticia_TInfoteca_Tipo_Delito" ManuallyRouted="false" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Noticia_Vehiculo_TInfoteca_Noticia" ManuallyRouted="false" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Noticia_Juridica_TInfoteca_Persona_Juridica" ManuallyRouted="false" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Noticia_Persona_TInfoteca_Persona" ManuallyRouted="false" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Noticia_Propiedad_TInfoteca_Propiedad" ManuallyRouted="false" />
+        <AssociationConnector Association="InfotecaModelo.FK_TInfoteca_Noticia_Vehiculo_TInfoteca_Vehiculo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

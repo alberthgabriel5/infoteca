@@ -1,0 +1,13 @@
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\bin\Debug\Infoteca.DataAccess.TRAN.dll.config
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\bin\Debug\Infoteca.DataAccess.TRAN.dll
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\bin\Debug\Infoteca.DataAccess.TRAN.pdb
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\bin\Debug\EntityFramework.SqlServer.dll
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\bin\Debug\EntityFramework.dll
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\bin\Debug\log4net.dll
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\bin\Debug\Infoteca.Utilitarios.dll
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\bin\Debug\Infoteca.Utilitarios.pdb
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\obj\Debug\Infoteca.DataAccess.TRAN.csprojAssemblyReference.cache
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\obj\Debug\Infoteca.DataAccess.TRAN.csproj.CoreCompileInputs.cache
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\obj\Debug\Infoteca.DataAccess.TRAN.csproj.CopyComplete
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\obj\Debug\Infoteca.DataAccess.TRAN.dll
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess.TRAN\obj\Debug\Infoteca.DataAccess.TRAN.pdb

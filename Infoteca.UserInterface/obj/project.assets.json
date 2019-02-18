@@ -1,0 +1,1097 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5.2": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "iTextSharp/5.5.13": {
+        "type": "package",
+        "compile": {
+          "lib/itextsharp.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {}
+        }
+      },
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.EntityFramework/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.0.0",
+          "Microsoft.AspNet.Identity.Core": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Owin/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Identity.Core": "1.0.0",
+          "Microsoft.Owin.Security": "2.0.0",
+          "Microsoft.Owin.Security.Cookies": "2.0.0",
+          "Microsoft.Owin.Security.OAuth": "2.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.SystemWeb/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.Cookies/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Microsoft.Owin.Security": "2.0.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.OAuth/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Microsoft.Owin.Security": "2.0.0",
+          "Newtonsoft.Json": "4.5.11",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        }
+      },
+      "Newtonsoft.Json/4.5.11": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
+        }
+      },
+      "Infoteca.BizLayer/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Infoteca.DataAccess.TRAN": "1.0.0",
+          "Infoteca.Utilitarios": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infoteca.BizLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infoteca.BizLayer.dll": {}
+        }
+      },
+      "Infoteca.DataAccess.TRAN/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "EntityFramework": "6.0.0",
+          "Infoteca.Utilitarios": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infoteca.DataAccess.TRAN.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infoteca.DataAccess.TRAN.dll": {}
+        }
+      },
+      "Infoteca.Utilitarios/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "log4net": "2.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Infoteca.Utilitarios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infoteca.Utilitarios.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "iTextSharp/5.5.13": {
+        "type": "package",
+        "compile": {
+          "lib/itextsharp.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {}
+        }
+      },
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.EntityFramework/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.0.0",
+          "Microsoft.AspNet.Identity.Core": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Owin/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Identity.Core": "1.0.0",
+          "Microsoft.Owin.Security": "2.0.0",
+          "Microsoft.Owin.Security.Cookies": "2.0.0",
+          "Microsoft.Owin.Security.OAuth": "2.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.SystemWeb/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.Cookies/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Microsoft.Owin.Security": "2.0.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.OAuth/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Microsoft.Owin.Security": "2.0.0",
+          "Newtonsoft.Json": "4.5.11",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        }
+      },
+      "Newtonsoft.Json/4.5.11": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
+        }
+      },
+      "Infoteca.BizLayer/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Infoteca.DataAccess.TRAN": "1.0.0",
+          "Infoteca.Utilitarios": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infoteca.BizLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infoteca.BizLayer.dll": {}
+        }
+      },
+      "Infoteca.DataAccess.TRAN/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "EntityFramework": "6.0.0",
+          "Infoteca.Utilitarios": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infoteca.DataAccess.TRAN.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infoteca.DataAccess.TRAN.dll": {}
+        }
+      },
+      "Infoteca.Utilitarios/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "log4net": "2.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Infoteca.Utilitarios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infoteca.Utilitarios.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win-x64": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "iTextSharp/5.5.13": {
+        "type": "package",
+        "compile": {
+          "lib/itextsharp.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {}
+        }
+      },
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.EntityFramework/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.0.0",
+          "Microsoft.AspNet.Identity.Core": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Owin/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Identity.Core": "1.0.0",
+          "Microsoft.Owin.Security": "2.0.0",
+          "Microsoft.Owin.Security.Cookies": "2.0.0",
+          "Microsoft.Owin.Security.OAuth": "2.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.SystemWeb/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.Cookies/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Microsoft.Owin.Security": "2.0.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.OAuth/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Microsoft.Owin.Security": "2.0.0",
+          "Newtonsoft.Json": "4.5.11",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        }
+      },
+      "Newtonsoft.Json/4.5.11": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
+        }
+      },
+      "Infoteca.BizLayer/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Infoteca.DataAccess.TRAN": "1.0.0",
+          "Infoteca.Utilitarios": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infoteca.BizLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infoteca.BizLayer.dll": {}
+        }
+      },
+      "Infoteca.DataAccess.TRAN/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "EntityFramework": "6.0.0",
+          "Infoteca.Utilitarios": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infoteca.DataAccess.TRAN.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infoteca.DataAccess.TRAN.dll": {}
+        }
+      },
+      "Infoteca.Utilitarios/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "log4net": "2.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Infoteca.Utilitarios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infoteca.Utilitarios.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win-x86": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "iTextSharp/5.5.13": {
+        "type": "package",
+        "compile": {
+          "lib/itextsharp.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {}
+        }
+      },
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.EntityFramework/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.0.0",
+          "Microsoft.AspNet.Identity.Core": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Owin/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Identity.Core": "1.0.0",
+          "Microsoft.Owin.Security": "2.0.0",
+          "Microsoft.Owin.Security.Cookies": "2.0.0",
+          "Microsoft.Owin.Security.OAuth": "2.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.SystemWeb/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.Cookies/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Microsoft.Owin.Security": "2.0.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.OAuth/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.0.0",
+          "Microsoft.Owin.Security": "2.0.0",
+          "Newtonsoft.Json": "4.5.11",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        }
+      },
+      "Newtonsoft.Json/4.5.11": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
+        }
+      },
+      "Infoteca.BizLayer/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Infoteca.DataAccess.TRAN": "1.0.0",
+          "Infoteca.Utilitarios": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infoteca.BizLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infoteca.BizLayer.dll": {}
+        }
+      },
+      "Infoteca.DataAccess.TRAN/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "EntityFramework": "6.0.0",
+          "Infoteca.Utilitarios": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infoteca.DataAccess.TRAN.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infoteca.DataAccess.TRAN.dll": {}
+        }
+      },
+      "Infoteca.Utilitarios/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "log4net": "2.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Infoteca.Utilitarios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infoteca.Utilitarios.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EntityFramework/6.2.0": {
+      "sha512": "7u/Xw6dnODaoB8opNC/Uz8nT/LKOxsvJhObYU+m0CErCXdOsyTC1MZwqQoam8lMehLTxBoMBewvWoOQUBaUKsQ==",
+      "type": "package",
+      "path": "entityframework/6.2.0",
+      "files": [
+        ".signature.p7s",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.transform",
+        "entityframework.6.2.0.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
+      ]
+    },
+    "iTextSharp/5.5.13": {
+      "sha512": "Vukh80ACfWR5hKBCfPobpUny/icva7SRmauowXWTg8N0TGvDqsbrL4Vq6UdWI/fJCsiNfu4mC4zbcxdr7KlIoA==",
+      "type": "package",
+      "path": "itextsharp/5.5.13",
+      "files": [
+        ".signature.p7s",
+        "AGPL.txt",
+        "itextsharp.5.5.13.nupkg.sha512",
+        "itextsharp.nuspec",
+        "lib/iTextSharp.xml",
+        "lib/itextsharp.dll",
+        "notice.txt"
+      ]
+    },
+    "log4net/2.0.8": {
+      "sha512": "dwvu/YELc2nF5gjAnJMXJToYXVdK8Ma0BfLTEugMTM6l8kFysL9Np5LnwhUV6EKTkbRmVTa0/X1/8oSICcoHHw==",
+      "type": "package",
+      "path": "log4net/2.0.8",
+      "files": [
+        ".signature.p7s",
+        "lib/net20-full/log4net.dll",
+        "lib/net20-full/log4net.xml",
+        "lib/net35-client/log4net.dll",
+        "lib/net35-client/log4net.xml",
+        "lib/net35-full/log4net.dll",
+        "lib/net35-full/log4net.xml",
+        "lib/net40-client/log4net.dll",
+        "lib/net40-client/log4net.xml",
+        "lib/net40-full/log4net.dll",
+        "lib/net40-full/log4net.xml",
+        "lib/net45-full/log4net.dll",
+        "lib/net45-full/log4net.xml",
+        "lib/netstandard1.3/log4net.dll",
+        "log4net.2.0.8.nupkg.sha512",
+        "log4net.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Identity.Core/1.0.0": {
+      "sha512": "Vk2B8gySG9Uvjn+hPP8hN7tvHOdSPP8Xt3FPBj/71+6Cg5B0ky+b/1dy5MOFGrir+EdatPQUpW/GwZaZM2KR0A==",
+      "type": "package",
+      "path": "microsoft.aspnet.identity.core/1.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/Microsoft.AspNet.Identity.Core.dll",
+        "lib/net45/Microsoft.AspNet.Identity.Core.xml",
+        "microsoft.aspnet.identity.core.1.0.0.nupkg.sha512",
+        "microsoft.aspnet.identity.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Identity.EntityFramework/1.0.0": {
+      "sha512": "kgGZGAVCQhlhV0nhl6405BgC4KZy7UXBVoFrEKrYLQBM+4vMSi0BeC9A/Kuc1Zo/0N4cQmI3c6kfKaWuDlAeTg==",
+      "type": "package",
+      "path": "microsoft.aspnet.identity.entityframework/1.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll",
+        "lib/net45/Microsoft.AspNet.Identity.EntityFramework.xml",
+        "microsoft.aspnet.identity.entityframework.1.0.0.nupkg.sha512",
+        "microsoft.aspnet.identity.entityframework.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Identity.Owin/1.0.0": {
+      "sha512": "xwtRafBhz4R0Rbcv41aT2W9V7DE7cLxwzDMrRU26AuX9PvQsaNbDw6RxbuRGSwfd3oChwo7a/IFdd1pm7iyrAw==",
+      "type": "package",
+      "path": "microsoft.aspnet.identity.owin/1.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/Microsoft.AspNet.Identity.Owin.dll",
+        "lib/net45/Microsoft.AspNet.Identity.Owin.xml",
+        "microsoft.aspnet.identity.owin.1.0.0.nupkg.sha512",
+        "microsoft.aspnet.identity.owin.nuspec"
+      ]
+    },
+    "Microsoft.Owin/2.0.0": {
+      "sha512": "t6i6D36vhbKUd4E3se5+gXYr2mT9eoLX2aSXi2p4WeqOPslg+Y0QpnpwXOcXNgGhXIKkZLoEAnzrpKXzEdQljA==",
+      "type": "package",
+      "path": "microsoft.owin/2.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net40/Microsoft.Owin.XML",
+        "lib/net40/Microsoft.Owin.dll",
+        "lib/net45/Microsoft.Owin.XML",
+        "lib/net45/Microsoft.Owin.dll",
+        "microsoft.owin.2.0.0.nupkg.sha512",
+        "microsoft.owin.nuspec"
+      ]
+    },
+    "Microsoft.Owin.Host.SystemWeb/2.0.0": {
+      "sha512": "Llbuul86CRDmELh5St3a5f0nZjBMc6BTKNoZq+1KFQEAyLA+EUQGyye0xTnVoUrQ3MUlevl5cUIIRW+ISoBxfg==",
+      "type": "package",
+      "path": "microsoft.owin.host.systemweb/2.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net40/Microsoft.Owin.Host.SystemWeb.dll",
+        "lib/net40/Microsoft.Owin.Host.SystemWeb.xml",
+        "lib/net45/Microsoft.Owin.Host.SystemWeb.dll",
+        "lib/net45/Microsoft.Owin.Host.SystemWeb.xml",
+        "microsoft.owin.host.systemweb.2.0.0.nupkg.sha512",
+        "microsoft.owin.host.systemweb.nuspec"
+      ]
+    },
+    "Microsoft.Owin.Security/2.0.0": {
+      "sha512": "TfXxBOuh9ld6M20Dz9FRgc9Xo0fU0rz/5hfW74a5rFpsvYwZRgGWCzY0TsiuurwOWYWueXw+O2Zlq5efN8obFg==",
+      "type": "package",
+      "path": "microsoft.owin.security/2.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/Microsoft.Owin.Security.XML",
+        "lib/net45/Microsoft.Owin.Security.dll",
+        "microsoft.owin.security.2.0.0.nupkg.sha512",
+        "microsoft.owin.security.nuspec"
+      ]
+    },
+    "Microsoft.Owin.Security.Cookies/2.0.0": {
+      "sha512": "ywJF5B2Klm+Mxjr2XbhUMsYmEKCT7t6zgAaahDEnrTFvHdKNGKFd/uYRKTsrr+0IMjzWIeev68zQxEAYHnaBbA==",
+      "type": "package",
+      "path": "microsoft.owin.security.cookies/2.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/Microsoft.Owin.Security.Cookies.dll",
+        "lib/net45/Microsoft.Owin.Security.Cookies.xml",
+        "microsoft.owin.security.cookies.2.0.0.nupkg.sha512",
+        "microsoft.owin.security.cookies.nuspec"
+      ]
+    },
+    "Microsoft.Owin.Security.OAuth/2.0.0": {
+      "sha512": "K3hNAeA1OhuakkGBYz3GH49c8/cqlsYQKEMxQESz3CsLBFTi5tlGtViCZ2tqlkMNiwodkIIWyO2CxrzhKjeINQ==",
+      "type": "package",
+      "path": "microsoft.owin.security.oauth/2.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/Microsoft.Owin.Security.OAuth.XML",
+        "lib/net45/Microsoft.Owin.Security.OAuth.dll",
+        "microsoft.owin.security.oauth.2.0.0.nupkg.sha512",
+        "microsoft.owin.security.oauth.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/4.5.11": {
+      "sha512": "7DqOeb0Z2lE6cSAxTooUAV1KR4LTxiyR31OiqaAFQr9ykbtio1sFoA2n6Ny3sY8fly8VV68U6yG9gtFgMcJivQ==",
+      "type": "package",
+      "path": "newtonsoft.json/4.5.11",
+      "files": [
+        ".signature.p7s",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl4+wp7+win8/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl4+wp7+win8/Newtonsoft.Json.xml",
+        "lib/sl3-wp/Newtonsoft.Json.dll",
+        "lib/sl3-wp/Newtonsoft.Json.xml",
+        "lib/sl4-windowsphone71/Newtonsoft.Json.dll",
+        "lib/sl4-windowsphone71/Newtonsoft.Json.xml",
+        "lib/sl4/Newtonsoft.Json.dll",
+        "lib/sl4/Newtonsoft.Json.xml",
+        "lib/winrt45/Newtonsoft.Json.dll",
+        "lib/winrt45/Newtonsoft.Json.xml",
+        "newtonsoft.json.4.5.11.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "Owin/1.0.0": {
+      "sha512": "OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
+      "type": "package",
+      "path": "owin/1.0.0",
+      "files": [
+        "lib/net40/Owin.dll",
+        "owin.1.0.0.nupkg.sha512",
+        "owin.nuspec"
+      ]
+    },
+    "Infoteca.BizLayer/1.0.0": {
+      "type": "project",
+      "path": "../Infoteca.BizLayer/Infoteca.BizLayer.csproj",
+      "msbuildProject": "../Infoteca.BizLayer/Infoteca.BizLayer.csproj"
+    },
+    "Infoteca.DataAccess.TRAN/1.0.0": {
+      "type": "project",
+      "path": "../Infoteca.DataAccess.TRAN/Infoteca.DataAccess.TRAN.csproj",
+      "msbuildProject": "../Infoteca.DataAccess.TRAN/Infoteca.DataAccess.TRAN.csproj"
+    },
+    "Infoteca.Utilitarios/1.0.0": {
+      "type": "project",
+      "path": "../Infoteca.Utilitarios/Infoteca.Utilitarios.csproj",
+      "msbuildProject": "../Infoteca.Utilitarios/Infoteca.Utilitarios.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5.2": [
+      "EntityFramework >= 6.2.0",
+      "Infoteca.BizLayer >= 1.0.0",
+      "Infoteca.DataAccess.TRAN >= 1.0.0",
+      "Infoteca.Utilitarios >= 1.0.0",
+      "Microsoft.AspNet.Identity.EntityFramework >= 1.0.0",
+      "Microsoft.AspNet.Identity.Owin >= 1.0.0",
+      "Microsoft.Owin.Host.SystemWeb >= 2.0.0",
+      "iTextSharp >= 5.5.13"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\alber\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Respaldo\\UCR\\Analisis y Diseño de Sistemas\\infoteca\\Infoteca\\Infoteca.UserInterface\\Infoteca.UserInterface.csproj",
+      "projectName": "Infoteca.UserInterface",
+      "projectPath": "C:\\Respaldo\\UCR\\Analisis y Diseño de Sistemas\\infoteca\\Infoteca\\Infoteca.UserInterface\\Infoteca.UserInterface.csproj",
+      "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
+      "outputPath": "C:\\Respaldo\\UCR\\Analisis y Diseño de Sistemas\\infoteca\\Infoteca\\Infoteca.UserInterface\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\alber\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net452"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net452": {
+          "projectReferences": {
+            "C:\\Respaldo\\UCR\\Analisis y Diseño de Sistemas\\infoteca\\Infoteca\\Infoteca.BizLayer\\Infoteca.BizLayer.csproj": {
+              "projectPath": "C:\\Respaldo\\UCR\\Analisis y Diseño de Sistemas\\infoteca\\Infoteca\\Infoteca.BizLayer\\Infoteca.BizLayer.csproj"
+            },
+            "C:\\Respaldo\\UCR\\Analisis y Diseño de Sistemas\\infoteca\\Infoteca\\Infoteca.DataAccess.TRAN\\Infoteca.DataAccess.TRAN.csproj": {
+              "projectPath": "C:\\Respaldo\\UCR\\Analisis y Diseño de Sistemas\\infoteca\\Infoteca\\Infoteca.DataAccess.TRAN\\Infoteca.DataAccess.TRAN.csproj"
+            },
+            "C:\\Respaldo\\UCR\\Analisis y Diseño de Sistemas\\infoteca\\Infoteca\\Infoteca.Utilitarios\\Infoteca.Utilitarios.csproj": {
+              "projectPath": "C:\\Respaldo\\UCR\\Analisis y Diseño de Sistemas\\infoteca\\Infoteca\\Infoteca.Utilitarios\\Infoteca.Utilitarios.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net452": {
+        "dependencies": {
+          "EntityFramework": {
+            "target": "Package",
+            "version": "[6.2.0, )"
+          },
+          "Microsoft.AspNet.Identity.EntityFramework": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "Microsoft.AspNet.Identity.Owin": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "Microsoft.Owin.Host.SystemWeb": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
+          "iTextSharp": {
+            "target": "Package",
+            "version": "[5.5.13, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

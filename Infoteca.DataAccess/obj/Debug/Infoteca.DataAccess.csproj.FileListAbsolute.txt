@@ -1,0 +1,6 @@
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess\bin\Debug\Infoteca.DataAccess.dll
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess\bin\Debug\Infoteca.DataAccess.pdb
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess\obj\Debug\Infoteca.DataAccess.csprojAssemblyReference.cache
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess\obj\Debug\Infoteca.DataAccess.csproj.CoreCompileInputs.cache
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess\obj\Debug\Infoteca.DataAccess.dll
+C:\Respaldo\UCR\Analisis y Diseño de Sistemas\infoteca\Infoteca\Infoteca.DataAccess\obj\Debug\Infoteca.DataAccess.pdb

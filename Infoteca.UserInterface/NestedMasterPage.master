@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage.master.cs" Inherits="Infoteca.UserInterface.NestedMasterPage" %>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <nav class="navbar navbar-default">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>      
+            </nav>   
+        </div>    
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
